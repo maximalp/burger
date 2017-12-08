@@ -14,16 +14,17 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
-    console.log("his is the burgers data object " + JSON.stringify(hbsObject));
+  //  console.log("his is the burgers data object " + JSON.stringify(hbsObject));
     res.render("index", hbsObject);
   });
 });
 
 router.post("/api/burgers", function(req, res) {
+  console.log("inside burger post" + req.body.name);
   burger.insertOne([
-    "name", "sleepy"
+    "burger_name", "devoured"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.name, req.body.devoured
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
@@ -36,7 +37,7 @@ router.put("/api/burgers/:id", function(req, res) {
   console.log("condition", condition);
 
   burger.updateOne({
-    sleepy: req.body.sleepy
+    devoured: req.body.devoured
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
