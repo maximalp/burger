@@ -1,4 +1,4 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ('Five Guys Burger', true), ('Chipotle Sauce Burger', false), ('Royale With Cheese', false),
+INSERT INTO burgers (burger_name, devoured) VALUES ('Five Guys Burger', false), ('Chipotle Sauce Burger', false), ('Royale With Cheese', false),
 																								('Jalapeno Burger', false);
 
-DELETE FROM burgers WHERE ('Five Guys Burger');
+DELETE FROM burgers WHERE id BETWEEN 1 and 15;

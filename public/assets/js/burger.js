@@ -4,7 +4,7 @@ $(function() {
     var id = $(this).data("id");
     //var devouredState = true;
     console.log("button click " + id);
-    alert("button click " + id);
+  //  alert("button click " + id);
     var newBurgerState = {
       devoured: true
     };
