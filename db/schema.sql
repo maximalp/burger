@@ -17,4 +17,5 @@ CREATE TABLE burgers
 
 SELECT * FROM burgers;
     
+ALTER TABLE burgers AUTO_INCREMENT =1;
     

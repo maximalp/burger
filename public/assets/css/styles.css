@@ -1,0 +1,43 @@
+body, html
+{
+background-color: lemonchiffon; 
+/*#FFF0B2; */
+}
+
+ul {
+
+  list-style-type: none;
+}
+
+.block.-burger
+{
+  margin-top:25px;
+}
+
+.button.is-danger.is-outlined.is-6
+{
+
+margin-top: 15px;
+margin-bottom:4px;
+
+}
+
+#devour
+{
+vertical-align: middle;
+
+
+}
+
+.devourdiv
+{
+display: flex; justify-content: flex-end;
+
+}
+
+#headburg
+{
+font-size: 45px;
+color: #FF3860;
+font-family: 'Gloria Hallelujah', cursive;
+}

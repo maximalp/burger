@@ -1,9 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".devour").on("click", function(event) {
+  $(".button.is-danger.submit").on("click", function(event) {
     var id = $(this).data("id");
     //var devouredState = true;
     console.log("button click " + id);
+    alert("button click " + id);
     var newBurgerState = {
       devoured: true
     };
@@ -22,13 +23,13 @@ $(function() {
   });
 
 
-  $(".create-form").on("submit", function(event) {
+  $("#newBurger").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     console.log("clicked submit");
     event.preventDefault();
     console.log("clicked submit");
     var newBurger = {
-      name: $("#newBurger").val().trim(),
+      name: $("#newBurgerName").val().trim(),
       devoured: 0
     };
 

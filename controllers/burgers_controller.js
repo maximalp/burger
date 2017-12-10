@@ -20,7 +20,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  console.log("inside burger post" + req.body.name);
+  console.log("inside burger post " + req.body.name);
   burger.insertOne([
     "burger_name", "devoured"
   ], [
@@ -34,7 +34,7 @@ router.post("/api/burgers", function(req, res) {
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
+  console.log("condition ", condition);
 
   burger.updateOne({
     devoured: req.body.devoured
