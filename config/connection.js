@@ -9,7 +9,7 @@ else {
   connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'maximlife1',
+    password: '',
     database: 'burgers_db'
   });
 };
